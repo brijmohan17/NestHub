@@ -12,7 +12,7 @@ const reviewsRouter=require('./routes/review.js')
 const userRouter=require('./routes/user.js')
 
 const port = 4000
-const DB_URL=process.env.DB_URL;
+const DB_URL=process.env.ATLASDB;
 
 main().
 then(()=>{
@@ -38,6 +38,7 @@ app.use((req, res) => {
     res.status(404).json({ message: 'Route not found' });
 });
 
-app.listen(port,()=>{
-    console.log(`Example app listning on port ${port}`)
-})
+// app.listen(port,()=>{
+//     console.log(`Example app listning on port ${port}`)
+// })
+module.exports = app;

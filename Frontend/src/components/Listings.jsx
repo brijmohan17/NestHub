@@ -13,6 +13,7 @@ const Listings = () => {
       try {
         let response = await fetch("http://localhost:4000/listings", { method: 'GET' })
         let data = await response.json()
+        
         setAllListing(data)
         setLoading(false)
       }

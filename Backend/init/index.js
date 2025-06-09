@@ -3,7 +3,7 @@ const mongoose=require("mongoose")
 const initData=require('./data.js')
 const Listing=require('../models/listing.js')
 
-const DB_URL=process.env.ATLASDB_URL;
+const DB_URL=process.env.ATLASDB;
 main()
     .then(()=>{
         console.log("Connected to db");
