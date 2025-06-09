@@ -38,6 +38,7 @@ app.use((req, res) => {
     res.status(404).json({ message: 'Route not found' });
 });
 
-app.listen(port,()=>{
-    console.log(`Example app listning on port ${port}`)
-})
+// app.listen(port,()=>{
+//     console.log(`Example app listning on port ${port}`)
+// })
+module.exports=app;
