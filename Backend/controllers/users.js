@@ -1,8 +1,8 @@
-const bcrypt=require('bcrypt')
+const bcrypt=require('bcryptjs')
 const jwt=require('jsonwebtoken')
 const User=require('../models/user')
 
-const JWT_SECRET=process.env.JWT_SECRET || '$N&B&LAV&jdhgj&vvcdsgv12'
+const JWT_SECRET=process.env.JWT_SECRET
 
 module.exports.signup=async (req,res)=>{
     try{

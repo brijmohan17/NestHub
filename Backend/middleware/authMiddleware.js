@@ -1,6 +1,6 @@
 const jwt =require('jsonwebtoken')
 const User=require('../models/user.js')
-const JWT_SECRET = process.env.JWT_SECRET || '$N&B&LAV&jdhgj&vvcdsgv12';
+const JWT_SECRET = process.env.JWT_SECRET 
 
 const authenticateToken=async (req,res,next)=>{
     // console.log("header array",req.headers)
