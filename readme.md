@@ -43,6 +43,14 @@
 
 ---
 
+## 🚀 Deployment Links
+
+- **Frontend**: [NestHub Frontend](https://nesthub-app.vercel.app/)
+- **Backend**: [NestHub Backend API](https://nest-hub-backend.vercel.app/)
+
+
+---
+
 ## ✅ Getting Started
 
 ### 1. Clone the Repository
