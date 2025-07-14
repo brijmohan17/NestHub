@@ -27,7 +27,8 @@ const Signup = () => {
     const loadingToast = toast.loading('Creating account...');
 
     try {
-      const response = await fetch('http://localhost:4000/signup', {
+      
+      const response = await fetch(`${import.meta.env.VITE_SERVER_DOMAIN}/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

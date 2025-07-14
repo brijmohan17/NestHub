@@ -16,7 +16,7 @@ const EditListing = () => {
   useEffect(() => {
     const fetchListing = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/listings/${id}`, {
+        const response = await fetch(`${import.meta.env.VITE_SERVER_DOMAIN}/listings/${id}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`

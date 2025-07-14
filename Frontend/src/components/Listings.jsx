@@ -11,14 +11,14 @@ const Listings = () => {
   useEffect(() => {
     const fetchListings = async () => {
       try {
-        let response = await fetch("http://localhost:4000/listings", { method: 'GET' })
+        let response = await fetch(`${import.meta.env.VITE_SERVER_DOMAIN}/listings`, { method: 'GET' })
         let data = await response.json()
         
         setAllListing(data)
         setLoading(false)
       }
       catch (error) {
-        console.log('Failed to fetch the listings', error)
+        // console.log('Failed to fetch the listings', error)
         setLoading(false)
       }
     }

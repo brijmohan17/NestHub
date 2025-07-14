@@ -25,7 +25,7 @@ const AddListings = () => {
       formData.append('listing[location]', data.location);
       formData.append('listing[image]', data.image[0]);
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:4000/listings', {
+      const response = await fetch(`${import.meta.env.VITE_SERVER_DOMAIN}/listings`, {
         method: 'POST',
         headers:{
             "Authorization":`Bearer ${token}`

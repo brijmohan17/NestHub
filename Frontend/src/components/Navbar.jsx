@@ -60,7 +60,7 @@ const Navbar = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     // Implement search functionality here
-    console.log('Searching for:', searchQuery);
+    // console.log('Searching for:', searchQuery);
   };
 
   return (
