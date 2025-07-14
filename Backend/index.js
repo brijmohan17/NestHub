@@ -1,6 +1,6 @@
-if(process.env.NODE_ENV!=='production'){
-    require('dotenv').config();
-}
+
+require('dotenv').config();
+
 const express =require('express')
 const app =express()
 const cors=require('cors')
@@ -38,7 +38,6 @@ app.use((req, res) => {
     res.status(404).json({ message: 'Route not found' });
 });
 
-// app.listen(port,()=>{
-//     console.log(`Example app listning on port ${port}`)
-// })
-module.exports = app;
+app.listen(port,()=>{
+    console.log(`Example app listning on port ${port}`)
+})
