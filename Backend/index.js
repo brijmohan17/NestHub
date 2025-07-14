@@ -25,7 +25,9 @@ then(()=>{
 async function main(){
     await mongoose.connect(DB_URL)
 }
-app.use(cors())
+app.use(cors({
+  origin:["http://localhost:5173","https://nesthub-app.vercel.app"]
+}));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 
