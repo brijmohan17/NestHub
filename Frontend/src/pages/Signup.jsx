@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar'
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 

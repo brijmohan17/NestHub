@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import SingleListing from '../components/SingleListing'
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 
 const ShowListing = () => {
   return (
